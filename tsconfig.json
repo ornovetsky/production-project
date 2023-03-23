@@ -1,0 +1,21 @@
+{
+"compilerOptions": {
+  "allowJs": true, // компилятор будет обрабатывать не только тс файлы, но и js
+  "outDir": "./dist",
+  "noImplicitAny": true, // подсвечивает места где не указан тип, просит указать тип или вписать any/unknown
+  "module": "ESNext", // различные способы модульной сборки
+  "target": "es5",// таргет версия в которую комплилится код
+  "jsx": "react",
+  "moduleResolution": "node",
+  "esModuleInterop": true, // повзоляет делать импорт как в обычном js вместо require()
+  // многие библиотеки написанные на nodejs не поддерживают дефолтный импорт
+  // лоадеры типа ts-loader и babel-loader поддерживают дефолтный импорт
+  // и можно не писать import * as React from 'react', а просто import React from 'react'
+    "allowSyntheticDefaultImports": true,
+},
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
