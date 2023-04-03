@@ -1,5 +1,5 @@
 import React, {FC, useMemo, useState} from 'react';
-import {LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext} from './ThemeContext';
+import {LOCAL_STORAGE_THEME_KEY, Theme, ThemeContext} from 'app/providers/ThemeProvider/lib/ThemeContext';
 //это компонент который возвращает из контекста провайдер
 
 //берем значение из локал стораджа, если его нет то по умолчанию будет светлая тема

@@ -13,6 +13,9 @@
   // и можно не писать import * as React from 'react', а просто import React from 'react'
     "allowSyntheticDefaultImports": true,
   "baseUrl": ".", // путь относительно которого будут искаться импорты
+  "paths": {
+    "*": ["./src/*"] // путь относительно baseUrl чтобы все импорты начинаись с папки src
+  }
 },
   "ts-node": {
     "compilerOptions": {

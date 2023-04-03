@@ -36,7 +36,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
             // rules Одно из самых важных полей, здесь мы конфигурируем загрузчики которые
             // будут обрабатывать наши файлы которые выходят за рамки js, т.е. (png jpg css svg) итд
         },
-        resolve: buildResolvers(), // резолв отвечает за нормальные импорты форматов файлов которые мы вкидываем через Import
+        resolve: buildResolvers(options), // резолв отвечает за нормальные импорты форматов файлов которые мы вкидываем через Import
         devtool: isDev ? 'inline-source-map' : undefined, // чтобы видеть где конкретно у нас ошибка в коде
         devServer: isDev ? buildDevServer(options) : undefined, // конфиг для devServer
 // это условие позволяет не запускать devServer в режиме production и делать сорсмапы только в режиме разработки

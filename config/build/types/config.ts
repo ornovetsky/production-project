@@ -12,6 +12,7 @@ export interface BuildPaths {
     entry: string;// путь до энтрипоинта где будет собираться приложение
     build: string; // путь до папки build
     html: string; // путь до html файла в папке public
+    src: string;
 }
 
 export interface BuildEnv {
